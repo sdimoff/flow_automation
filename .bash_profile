@@ -23,6 +23,7 @@ kill_port() {
  kill $( lsof -i:$* -t )
 }
 
+alias gs='git stash'
 alias ki=kill_port
 alias red='redis-server'
 alias rf='rm -rf'
@@ -42,17 +43,15 @@ alias ac=add_commit_push
 alias nbcl='npm cache clean --force && bower cache clean'
 alias nbi='npm i && bower i'
 alias b='git branch'
-alias xetc='curl -s https://api.coinmarketcap.com/v2/ticker/1321/?convert=BGN'
 alias nsw='git update-index --no-skip-worktree'
 alias sw='git update-index --skip-worktree'
 alias com='ember g component'
 alias sbp='source ~/.bash_profile'
 alias es='ember server'
-alias sal='cd ~/development/Telerik/'
 alias swl='git ls-files -v . | grep ^S'
 alias vbp='vim ~/.bash_profile'
 alias fa='git fetch --all'
-alias gs='git stash'
+alias st='git stash'
 alias sp='git stash pop'
 alias sl='git stash list'
 alias del='git branch -D'
